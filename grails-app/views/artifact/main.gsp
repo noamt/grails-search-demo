@@ -35,14 +35,14 @@
 
 <table>
     %{--<div class="table-row-div table-header-div">--}%
-        <tr><th>Artifact Name</th><th>Artifact Version</th></tr>
+        <tr><th>Artifact Name</th><th>Artifact Version</th><th>Artifact Description <small>(not searchable)</small></th></tr>
     %{--</div>--}%
     <g:each in="${existingArtifacts}" var="existingArtifact">
         %{--<div class="table-row-div">--}%
             <tr>
                 <td>${existingArtifact.name}</td>
                 <td>${existingArtifact.ver}</td>
-
+                <td>${existingArtifact.desc}</td>
             </tr>
         %{--</div>--}%
     </g:each>
