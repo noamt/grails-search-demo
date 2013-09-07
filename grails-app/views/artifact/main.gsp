@@ -25,6 +25,10 @@
     </div>
 
     <div>
+        Artifact Description <g:textField name="artifactDesc"/>
+    </div>
+
+    <div>
         <g:submitButton name="saveArtifact" value="Save"/>
     </div>
 </g:form>

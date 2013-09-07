@@ -59,7 +59,10 @@ grails.exceptionresolver.params.exclude = ['password']
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
 
-elasticSearch.client.mode = 'transport'
+elasticSearch {
+//    file = '/home/user/.es/config.file.yaml'         specify a configuration file for the embedded mode
+    client.mode = 'transport'
+}
 
 environments {
     development {

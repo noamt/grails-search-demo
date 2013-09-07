@@ -13,7 +13,8 @@ class ArtifactController {
     def save() {
         def name = params.artifactName
         def version = params.artifactVersion
-        new Artifact(name: name, ver: version).save()
+        def desc = params.artifactDesc
+        new Artifact(name: name, ver: version, desc: desc).save()
 
         redirect(controller: 'artifact', action: 'main')
     }
